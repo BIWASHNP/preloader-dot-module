@@ -1,0 +1,45 @@
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align:middle;}
+
+
+
+/* preloader DOT MODULE */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position:absolute;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.preloader-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff3b30;
+  animation: pulse 1.2s infinite ease-in-out;
+  margin: auto;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
